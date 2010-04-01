@@ -1,0 +1,18 @@
+<p>
+  <b>Professor:</b>
+  <%=h @board.professor_id %>
+</p>
+
+<p>
+  <b>Generated:</b>
+  <%=h @board.generated %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @board.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_board_path(@board) %> |
+<%= link_to 'Back', boards_path %>

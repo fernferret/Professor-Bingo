@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  professor_id: 1
+  generated: 2010-04-01
+  user_id: 1
+
+two:
+  professor_id: 1
+  generated: 2010-04-01
+  user_id: 1

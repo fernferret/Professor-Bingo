@@ -16910,3 +16910,41 @@ Rendering template within layouts/application
 Rendering users/new
 Rendered users/_form (40.0ms)
 Completed in 134ms (View: 116, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-04-01 03:58:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (2.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 2) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 8) [0m
+Completed in 192ms (View: 143, DB: 4) | 200 OK [http://localhost/professors]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhrases (20100330035004)
+Migrating to CreateProfessors (20100330040005)
+Migrating to AddProfToPhrase (20100330061029)
+Migrating to CreateUsers (20100331045850)
+Migrating to RemoveProfId (20100331081401)
+Migrating to CreateBoards (20100401080603)
+  [4;36;1mSQL (99.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE "boards" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "professor_id" integer, "generated" date, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100401080603')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("boards")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("phrases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("professors")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
