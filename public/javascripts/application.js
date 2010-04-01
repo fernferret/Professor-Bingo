@@ -97,4 +97,14 @@ $(document).ready(function() {
      });
 
   ajaxLinks();
+  $(".square").live('click', function(){
+	if($(this).hasClass('checked'))
+	{
+		$(this).removeClass('checked');
+	}
+	else
+	{
+		$(this).addClass('checked');
+	}
+  });
 });

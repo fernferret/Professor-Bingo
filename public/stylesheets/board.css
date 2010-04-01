@@ -90,3 +90,7 @@ input[type=submit] {
   margin-right: auto;
   text-align: center;
   width: 500px; }
+
+.checked {
+  background-color: #ad82ff;
+  color: #272822; }

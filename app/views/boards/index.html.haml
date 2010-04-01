@@ -25,4 +25,5 @@
 				%td= h(board.professor.name)
 				%td= h(board.generated)
 				%td= link_to('Show', board)
-= link_to('Generate a new board!',new_board_path)
+- if current_user
+	= link_to('Generate a new board!',new_board_path)
