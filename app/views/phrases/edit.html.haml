@@ -1,0 +1,18 @@
+%h1
+	Editing Phrase
+
+- form_for(@phrase) do |f|
+	= f.error_messages
+		
+	%p
+		= f.label :text
+		%br= f.text_field :text
+	%p
+		= 'Professor'
+		%select{:name => 'phrase[professor_id]', :id => 'phrase_professor_id'}
+			- @professors.each do |prof|
+				%option{:value => prof.id}
+					= prof.name
+	%p= submit_tag('Update')
+= link_to('Show', @phrase)
+= link_to('Back', phrases_path)

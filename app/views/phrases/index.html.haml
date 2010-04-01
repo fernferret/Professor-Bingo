@@ -1,0 +1,16 @@
+%h1= "Listing Phrases"
+%table
+	%tr
+		%th= "Phrase ID"
+		%th= "Text"
+		%th= "Professor"
+		- @phrases.each do |phrase|
+			.phrase
+				%tr
+					%td= h(phrase.id)
+					%td= h(phrase.text)
+					%td= h(phrase.professor.name)
+					%td= link_to('Show', phrase)
+					%td= link_to('Edit', edit_phrase_path(phrase))
+					%td= link_to('Destroy',phrase,:confirm => 'Are you sure?', :method => :delete)
+%br= link_to('New Phrase', new_phrase_path)

@@ -1,0 +1,910 @@
+# Logfile created on Tue Mar 30 14:34:55 -0400 2010REQUESTING PAGE: GET /professors/1 with {} and HTTP headers {}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 15:03:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2010-03-30 15:03:18) [GET]
+  Parameters: {"id"=>"1"}
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:04:56) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6461ms (View: 6457, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:05:38) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6270ms (View: 6264, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:06:32) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6226ms (View: 6222, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:07:29) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6258ms (View: 6254, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:11:07) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6286ms (View: 6283, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:11:14) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:13:28) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6291ms (View: 6287, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:13:34) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:15:31) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6333ms (View: 6329, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:15:37) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:17:11) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6527ms (View: 6524, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:17:18) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:18:53) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6297ms (View: 6292, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:19:00) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:27:49) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6982ms (View: 6978, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:27:56) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:29:35) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6284ms (View: 6281, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:29:41) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Professor"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 15:29:41) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Professor"}}
+  [4;36;1mProfessor Create (54.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Professor', '2010-03-30 19:29:41', NULL, '2010-03-30 19:29:41')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 59ms (DB: 54) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 15:29:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:31:09) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6291ms (View: 6287, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:31:15) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Professor"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 15:31:15) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Professor"}}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Professor', '2010-03-30 19:31:15', NULL, '2010-03-30 19:31:15')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 15:31:15) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:33:22) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6279ms (View: 6275, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:33:28) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Professor"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 15:33:28) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Professor"}}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Professor', '2010-03-30 19:33:28', NULL, '2010-03-30 19:33:28')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 15:33:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:34:00) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6320ms (View: 6315, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 15:34:06) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Professor"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 15:34:07) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Professor"}}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Professor', '2010-03-30 19:34:07', NULL, '2010-03-30 19:34:07')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 6ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 15:34:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:07:10) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6246ms (View: 6242, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:07:16) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Professor"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:07:16) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Professor"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Professor', '2010-03-30 20:07:16', NULL, '2010-03-30 20:07:16')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:07:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:07:39) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6280ms (View: 6276, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:07:46) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Professor"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:07:46) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Professor"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Professor', '2010-03-30 20:07:46', NULL, '2010-03-30 20:07:46')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:07:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:08:13) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6269ms (View: 6266, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:08:20) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:08:20) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:08:20', NULL, '2010-03-30 20:08:20')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:08:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:09:41) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6256ms (View: 6252, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:09:47) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:09:47) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:09:47', NULL, '2010-03-30 20:09:47')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:09:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:10:18) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6356ms (View: 6352, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:10:25) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:10:25) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:10:25', NULL, '2010-03-30 20:10:25')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:10:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:16:18) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6335ms (View: 6331, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:16:25) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:16:25) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:16:25', NULL, '2010-03-30 20:16:25')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:16:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:16:25) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:16:25) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:16:25', NULL, '2010-03-30 20:16:25')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:16:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:17:38) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6375ms (View: 6371, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:17:45) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:17:45) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:17:45', NULL, '2010-03-30 20:17:45')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 66ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:17:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:17:45) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:17:45) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:17:45', NULL, '2010-03-30 20:17:45')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:17:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/professors/1"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-30 16:17:45) [GET]
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:20:30) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6395ms (View: 6390, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:20:36) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:20:36) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:20:36', NULL, '2010-03-30 20:20:36')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:20:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 4ms (View: 3, DB: 1) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:20:36) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:20:36) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:20:36', NULL, '2010-03-30 20:20:36')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:20:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:21:14) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6392ms (View: 6387, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:21:21) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:21:21) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:21:21', NULL, '2010-03-30 20:21:21')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 67ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:21:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 1) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-30 16:21:21) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-30 16:21:21) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-30 20:21:21', NULL, '2010-03-30 20:21:21')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 4ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-30 16:21:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/professors/1"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-30 16:21:21) [GET]
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-30 16:21:21) [GET]
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 00:34:07) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6751ms (View: 6747, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 00:34:14) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 00:34:14) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (23.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 04:34:14', NULL, '2010-03-31 04:34:14')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 95ms (DB: 23) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 00:34:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 00:34:14) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 00:34:14) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 04:34:14', NULL, '2010-03-31 04:34:14')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 00:34:14) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/professors/1"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 00:34:14) [GET]
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 00:34:14) [GET]
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 00:34:44) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6613ms (View: 6609, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 00:34:51) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 00:34:51) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 04:34:51', NULL, '2010-03-31 04:34:51')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 70ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 00:34:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 00:34:51) [GET]
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 00:34:51) [POST]
+  Parameters: {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 04:34:51', NULL, '2010-03-31 04:34:51')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 6ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 00:34:51) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/professors/1"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 00:34:51) [GET]
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 00:34:51) [GET]
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 12:29:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6206ms (View: 6202, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 12:30:01) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "professor"=>{"name"=>"Cary Laxer"}, "controller"=>"professors"}
+  [4;36;1mProfessor Create (3.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 16:30:01', NULL, '2010-03-31 16:30:01')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 9ms (DB: 3) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 12:30:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"professors"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/professors/1"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 12:30:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+Completed in 17ms (View: 13, DB: 1) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 12:30:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 16:24:12) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 6122ms (View: 6119, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 16:24:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 16:24:19) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "professor"=>{"name"=>"Cary Laxer"}, "controller"=>"professors"}
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 20:24:19', NULL, '2010-03-31 20:24:19')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 4ms (DB: 2) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 16:24:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"professors"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors/new with {} and HTTP headers {}
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-03-31 16:24:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors/new]
+REQUESTING PAGE: POST /professors with {"commit"=>"Create", "professor"=>{"name"=>"Cary Laxer"}} and HTTP headers {"HTTP_REFERER"=>"/professors/new"}
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-03-31 16:24:19) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "professor"=>{"name"=>"Cary Laxer"}, "controller"=>"professors"}
+  [4;36;1mProfessor Create (1.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at") VALUES('Cary Laxer', '2010-03-31 20:24:19', NULL, '2010-03-31 20:24:19')[0m
+Redirected to http://www.example.com/professors/1
+Completed in 4ms (DB: 1) | 302 Found [http://www.example.com/professors]
+REQUESTING PAGE: GET http://www.example.com/professors/1 with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-03-31 16:24:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"professors"}
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://www.example.com/professors/1]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/professors/1"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 16:24:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://www.example.com/professors]
+REQUESTING PAGE: GET /professors with {} and HTTP headers {"HTTP_REFERER"=>"/professors"}
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-03-31 16:24:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://www.example.com/professors]

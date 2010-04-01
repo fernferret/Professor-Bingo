@@ -1,0 +1,14 @@
+.header1
+	Listing professors
+.bottomlinks.rounded
+	%table
+		- @professors.each do |professor|
+			%tr
+				%td= h(professor.name)
+				- if(Phrase.find(:all, :conditions => {:professor_id => professor.id}).length > 0)
+					%td= link_to('View Board', :controller => 'professors', :action => 'board', :id => professor)
+				- else
+					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new')
+				%td= link_to('Edit', edit_professor_path(professor))
+				%td= link_to('Destroy',professor,:confirm => 'Are you sure?', :method => :delete)
+	%br= link_to('New professor', new_professor_path)

@@ -1,0 +1,146 @@
+// Variable Declarations
+// Generic Colors
+!monokai_green = #A8E22E
+!monokai_black = #272822
+!monokai_dark_black = #131311
+!monokai_light_gray = #4D4F44
+!monokai_blue = #65DBEF
+!monokai_red = #EF2929
+!monokai_pink = #F92670
+!monokai_purple = #AD82FF
+!monokai_gray = #D0CFC6
+!monokai_yellow = #FCAF3E
+!black = #000000
+// Generic
+!number_of_rows = 5
+
+// Square
+!square_border_c = !monokai_green
+!square_bg_c = !monokai_black
+!square_bg_hover_c = !monokai_light_gray
+!square_dim = 100px
+!square_border_width = 2px
+!square_padding = 2px
+!square_margin = 2px
+!actual_square_dim = ( !square_dim + ( 2 * !square_margin ) + ( 2 * !square_border_width ) + ( 2 * !square_padding ) )
+
+// Board
+!board_border_c = #FF0000
+!board_bg_c = !monokai_black
+!board_padding = 2px
+!board_text_c = !monokai_blue
+
+// Header (H1)
+!header_color = !monokai_yellow
+
+// Background
+!background_color = !black
+
+
+// Mixins
+=round
+	border-radius: 5px
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+
+// Class Definitions
+body
+	background-color = !background_color
+	color = !monokai_gray
+
+a
+	color = !monokai_pink
+	background-color: none
+	&:visited
+		color = !monokai_pink
+	&:hover
+		color = !monokai_purple
+		
+// Make a note about this:
+// Ordering DOES have an effect
+//
+//	&:visited
+//		color = !monokai_pink
+	
+
+.header1
+	+round
+	font:
+		size: 220%
+		family: 'Calibri'
+		weight: bold
+	color = !header_color
+	background-color = !board_bg_c
+	padding: 5px
+	margin:
+		bottom: 20px
+		left: auto
+		right: auto
+	text:
+		align: center
+	width: 500px
+
+input
+	+round
+	color = !monokai_gray
+	background-color = !monokai_dark_black
+	border:
+		color = !monokai_blue
+		style: solid
+		width: 2px
+	&:hover
+		border:
+			color = !monokai_green
+	&:focus
+		border:
+			color = !monokai_green
+	padding: 2px
+	
+input[type=submit]
+	color = !monokai_blue
+	&:hover
+		color = !monokai_green
+	&:focus
+		color = !monokai_green
+		
+.board
+	+round
+	border: none
+	width = !actual_square_dim * !number_of_rows
+	height = !actual_square_dim * !number_of_rows
+	background-color = !board_bg_c
+	margin: auto
+	color = !board_text_c
+	font:
+		size: 90%
+	padding = !board_padding
+
+.square
+	+round
+	float: left
+	border:
+		width = !square_border_width
+		style: solid
+		color = !square_border_c
+	width =  !square_dim
+	height =  !square_dim
+	background-color = !square_bg_c
+	padding = !square_padding
+	margin = !square_margin
+	text:
+		align: center
+	cursor: pointer
+	&:hover
+		background-color = !square_bg_hover_c
+
+.graybg
+	+round
+	background-color = !board_bg_c
+	padding: 5px
+	margin:
+		top: 20px
+		left: auto
+		right: auto
+	text:
+		align: center
+	width: 500px

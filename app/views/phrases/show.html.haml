@@ -1,0 +1,11 @@
+%p
+	%b= "Phrase:"
+	= h(@phrase.id)
+%p
+	%b= "Name:"
+	= h(@phrase.text)
+%p
+	%b= "Professor:"
+	= h(@phrase.professor.name)
+= link_to('Edit', edit_phrase_path(@phrase))
+= link_to('Back', phrases_path)

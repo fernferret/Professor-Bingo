@@ -1,0 +1,9 @@
+.header1
+	= @professor.name
+	= 'Bingo!'
+.board
+	- @items.sort_by{rand}.each do |quote|
+		.square
+			= h(quote.text)
+.bottomlinks
+	= link_to('Add New Phrase', new_phrase_path(:professor => @professor))
