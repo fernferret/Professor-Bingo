@@ -1,0 +1,13 @@
+.header1
+	= @board.professor.name
+	= 'Bingo!'
+= 'Generated for: '
+= @board.user.username
+= ' on '
+= @board.generated
+.board
+	- @board.phrases.each do |quote|
+		.square
+			= h(quote.text)
+.bottomlinks
+	= link_to('Add New Phrase', new_phrase_path(:professor => @professor))

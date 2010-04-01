@@ -16,3 +16,14 @@
 
 <%= link_to 'Edit', edit_board_path(@board) %> |
 <%= link_to 'Back', boards_path %>
+.header1
+	= @board.professor.name
+	= 'Bingo!'
+= 'Generated for: '
+= @board.user.name
+.board
+	- @items.sort_by{rand}.each do |quote|
+		.square
+			= h(quote.text)
+.bottomlinks
+	= link_to('Add New Phrase', new_phrase_path(:professor => @professor))

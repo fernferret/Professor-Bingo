@@ -1,0 +1,16 @@
+.header1
+	= 'New board'
+.graybg
+	- form_for(@board) do |f|
+		= f.error_messages
+
+		%br= 'Professor'
+		%select{:name => 'board[professor_id]', :id => 'board_professor_id'}
+			- @professors.each do |professor|
+				%option{:value => professor.id}
+					= professor.name
+	
+		%br
+		%br= submit_tag('Generate My Board!')
+.graybg
+	= link_to('Back', boards_path)

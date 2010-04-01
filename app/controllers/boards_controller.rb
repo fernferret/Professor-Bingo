@@ -2,8 +2,10 @@ class BoardsController < ApplicationController
   # GET /boards
   # GET /boards.xml
   def index
-    @boards = Board.all
-
+    @allboards = Board.all
+	current_user = UserSession.find
+	user_id = current_user && current_user.record.id
+	@myboards = Board.find(:all, :conditions => {:user_id => user_id})
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @boards }
@@ -14,7 +16,6 @@ class BoardsController < ApplicationController
   # GET /boards/1.xml
   def show
     @board = Board.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @board }
@@ -25,7 +26,7 @@ class BoardsController < ApplicationController
   # GET /boards/new.xml
   def new
     @board = Board.new
-
+	@professors = Professor.find(:all)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @board }
@@ -41,7 +42,15 @@ class BoardsController < ApplicationController
   # POST /boards.xml
   def create
     @board = Board.new(params[:board])
-
+	@board.generated = DateTime.now
+	current_user = UserSession.find
+	@board.user_id = current_user && current_user.record.id
+	phrases = Array.new
+	@items = Phrase.random(25, :conditions => {:professor_id => @board.professor})
+	@items.sort_by{rand}.each do |phrase|
+		phrases.push(phrase)
+	end
+	@board.phrases = phrases
     respond_to do |format|
       if @board.save
         flash[:notice] = 'Board was successfully created.'

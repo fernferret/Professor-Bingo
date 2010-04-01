@@ -1,0 +1,28 @@
+.header1
+	= 'All Boards'
+%table
+	%tr
+		%th= 'Professor'
+		%th= 'Generated on'
+		%th= 'User'
+	- @allboards.each do |board|
+		%tr
+			%td= h(board.professor.name)
+			%td= h(board.generated)
+			%td= h(board.user.username)
+			%td= link_to('Show', board)
+			%td= link_to('Edit', edit_board_path(board))
+			%td= link_to('Destroy', board, :confirm => 'Are you sure?', :method => :delete)
+- if (@myboards.length > 0)
+	.header1
+		= 'My Boards'
+	%table
+		%tr
+			%th= 'Professor'
+			%th= 'Generated on'
+		- @myboards.each do |board|
+			%tr
+				%td= h(board.professor.name)
+				%td= h(board.generated)
+				%td= link_to('Show', board)
+= link_to('Generate a new board!',new_board_path)
