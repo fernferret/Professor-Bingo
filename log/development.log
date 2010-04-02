@@ -30701,3 +30701,1609 @@ Net::LDAP::LdapError (invalid binding information):
 Rendered rescues/_trace (182.0ms)
 Rendered rescues/_request_and_response (1.0ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2010-04-02 04:34:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 04:34:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 5770ms (View: 90, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 04:34:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 40ms (View: 21, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:34:32) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'stokesej') LIMIT 1[0m
+
+Net::LDAP::LdapError (Unable to add empty DN):
+  c:/Ruby/lib/ruby/gems/1.8/gems/ruby-net-ldap-0.0.4/lib/net/ldap.rb:1256:in `add'
+  c:/Ruby/lib/ruby/gems/1.8/gems/ruby-net-ldap-0.0.4/lib/net/ldap.rb:799:in `add'
+  app/models/user.rb:11:in `valid_ldap_credentials?'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2010-04-02 04:35:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 04:35:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;35;1mBoard Load (2.0ms)[0m   [0mSELECT * FROM "boards" [0m
+  [4;36;1mBoard Load (0.0ms)[0m   [0;1mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 171ms (View: 73, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 04:35:10) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 7, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:35:16) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'stokesej') LIMIT 1[0m
+
+Net::LDAP::LdapError (invalid binding information):
+  c:/Ruby/lib/ruby/gems/1.8/gems/ruby-net-ldap-0.0.4/lib/net/ldap.rb:1097:in `bind'
+  c:/Ruby/lib/ruby/gems/1.8/gems/ruby-net-ldap-0.0.4/lib/net/ldap.rb:701:in `bind'
+  app/models/user.rb:16:in `valid_ldap_credentials?'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:36:39) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'stokesej') LIMIT 1[0m
+
+Net::LDAP::LdapError (invalid binding information):
+  c:/Ruby/lib/ruby/gems/1.8/gems/ruby-net-ldap-0.0.4/lib/net/ldap.rb:1097:in `bind'
+  c:/Ruby/lib/ruby/gems/1.8/gems/ruby-net-ldap-0.0.4/lib/net/ldap.rb:701:in `bind'
+  app/models/user.rb:16:in `valid_ldap_credentials?'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (46.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 04:45:06) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 26ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:45:11) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'stokesej') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 173ms (View: 6, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:45:16) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"fernferret", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'fernferret') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 35ms (View: 6, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:45:24) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"hammerdr", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'hammerdr') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 99ms (View: 6, DB: 1) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:45:57) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 6, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:46:02) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'stokesej') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 33ms (View: 6, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2010-04-02 04:47:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 04:47:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;35;1mBoard Load (2.0ms)[0m   [0mSELECT * FROM "boards" [0m
+
+SyntaxError (c:/RubyProjects/Professor-Bingo/app/models/user.rb:22: syntax error, unexpected kEND):
+  authlogic (2.1.3) lib/authlogic/session/klass.rb:33:in `klass'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:90:in `login_field'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:213:in `login_field'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:118:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/activation.rb:48:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/klass.rb:64:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:79:in `initialize'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:37:in `new'
+  authlogic (2.1.3) lib/authlogic/session/persistence.rb:37:in `find'
+  app/controllers/boards_controller.rb:7:in `index'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 04:48:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 109ms (View: 74, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 04:48:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 27ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 04:48:11) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'stokesej') LIMIT 1[0m
+
+NameError (uninitialized constant User::LDAP):
+  app/models/user.rb:20:in `valid_ldap_credentials?'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `send'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:191:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (118.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:13:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (0.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 284ms (View: 153, LDAP: 0, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:13:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 41ms (View: 20, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:13:40) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `find_by_login' for #<Class:0x7943628>):
+  app/models/user.rb:13:in `find_or_create_from_ldap'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:183:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:14:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 28ms (View: 7, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:14:50) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `find_by_login' for #<Class:0x7aaeec8>):
+  app/models/user.rb:13:in `find_or_create_from_ldap'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:183:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:15:34) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+
+NameError (uninitialized constant User::LdapUser):
+  app/models/user.rb:19:in `create_from_ldap_if_valid'
+  app/models/user.rb:13:in `find_or_create_from_ldap'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:183:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:16:41) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+
+NameError (uninitialized constant User::LdapUser):
+  app/models/user.rb:19:in `create_from_ldap_if_valid'
+  app/models/user.rb:13:in `find_or_create_from_ldap'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:95:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `send'
+  authlogic (2.1.3) lib/authlogic/session/scopes.rb:94:in `search_for_record'
+  authlogic (2.1.3) lib/authlogic/session/password.rb:183:in `validate_by_password'
+  authlogic (2.1.3) lib/authlogic/session/callbacks.rb:72:in `validate'
+  authlogic (2.1.3) lib/authlogic/session/validation.rb:64:in `valid?'
+  authlogic (2.1.3) lib/authlogic/session/existence.rb:65:in `save'
+  app/controllers/user_sessions_controller.rb:8:in `create'
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2010-04-02 05:17:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:17:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 112ms (View: 72, LDAP: 0, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:17:28) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 31ms (View: 6, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:17:31) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+Attempting to reconnect
+  [4;36;1mLDAP: connect (1.0ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://rose-hulman.edu"}[0m
+  [4;35;1mLDAP: bind (14.0ms)[0m: [0m{:dn=>"stokesej@rose-hulman.edu"}[0m
+Bound to ldap://rose-hulman.edu by simple as stokesej@rose-hulman.edu
+  [4;35;1mLDAP: search (1.0ms)[0m: [0m{:attributes=>[], :base=>"o=users,dc=rose-hulman,dc=edu", :scope=>:sub, :filter=>"(&(uid=stokesej)(objectClass=top))"}[0m
+Ignore error ActiveLdap::LdapError::NoSuchObject(No Such Object): filter (&(uid=stokesej)(objectClass=top)): attributes: []
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `gettext' for #<UserSession: {:password=>"<protected>", :username=>"stokesej"}>) on line #4 of app/views/user_sessions/new.html.haml:
+1: %title= 'Login'
+2: - form_for @user_session do |f|
+3: 	%p
+4: 		= f.label :username
+5: 		%br= f.text_field :username
+6: 	%p
+7: 		= f.label :password
+
+    c:/Ruby/lib/ruby/gems/1.8/gems/gettext_activerecord-2.1.0/lib/gettext_activerecord/validations.rb:163:in `localize_error_message'
+    c:/Ruby/lib/ruby/gems/1.8/gems/gettext_activerecord-2.1.0/lib/gettext_activerecord/validations.rb:184:in `localize_error_messages'
+    c:/Ruby/lib/ruby/gems/1.8/gems/gettext_activerecord-2.1.0/lib/gettext_activerecord/validations.rb:181:in `localize_error_messages'
+    c:/Ruby/lib/ruby/gems/1.8/gems/gettext_activerecord-2.1.0/lib/gettext_activerecord/validations.rb:124:in `on'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:108:in `content_tag'
+    app/views/user_sessions/new.html.haml:4
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/user_sessions_controller.rb:13:in `create'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (128.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#index (for 127.0.0.1 at 2010-04-02 05:19:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"user_sessions"}
+
+ActionController::UnknownAction (No action responded to index. Actions: create, destroy, and new):
+  haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:19:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 117ms (View: 78, LDAP: 16, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:19:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 30ms (View: 6, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:20:02) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;35;1mLDAP: search (1.0ms)[0m: [0m{:attributes=>[], :base=>"o=users,dc=rose-hulman,dc=edu", :scope=>:sub, :filter=>"(&(uid=stokesej)(objectClass=top))"}[0m
+Ignore error ActiveLdap::LdapError::NoSuchObject(No Such Object): filter (&(uid=stokesej)(objectClass=top)): attributes: []
+Redirected to http://localhost:3000/
+Completed in 29ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:20:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (0.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 111ms (View: 70, LDAP: 1, DB: 5) | 200 OK [http://localhost/]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:20:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (3.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 122ms (View: 80, LDAP: 0, DB: 7) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:20:19) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 32ms (View: 6, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:21:40) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;35;1mLDAP: search (1.0ms)[0m: [0m{:attributes=>[], :base=>"o=users,dc=rose-hulman,dc=edu", :scope=>:sub, :filter=>"(&(uid=stokesej)(objectClass=top))"}[0m
+Ignore error ActiveLdap::LdapError::NoSuchObject(No Such Object): filter (&(uid=stokesej)(objectClass=top)): attributes: []
+Redirected to http://localhost:3000/
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:21:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (0.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 112ms (View: 71, LDAP: 1, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:21:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 33ms (View: 6, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:23:11) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 127ms (View: 62, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:23:16) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"stokesej", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+Attempting to reconnect
+  [4;36;1mLDAP: connect (1.0ms)[0m: [0;1m{:with_start_tls=>false, :uri=>"ldap://rose-hulman.edu"}[0m
+  [4;35;1mLDAP: bind: anonymous (1.0ms)[0m: [0m{}[0m
+Bound to ldap://rose-hulman.edu as anonymous
+  [4;35;1mLDAP: search (1.0ms)[0m: [0m{:attributes=>[], :base=>"ou=LdapUsers,dc=rose-hulman,dc=edu", :scope=>:sub, :filter=>"(&(cn=stokesej)(objectClass=top))"}[0m
+Ignore error ActiveLdap::LdapError::OperationsError(Operations Error): filter (&(cn=stokesej)(objectClass=top)): attributes: []
+Redirected to http://localhost:3000/
+Completed in 370ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:23:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 146ms (View: 90, LDAP: 3, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:23:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 32ms (View: 6, LDAP: 0, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:30:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `email' for #<UserSession: no credentials provided>) on line #8 of app/views/user_sessions/new.html.haml:
+5: 		%br= f.text_field :username
+6: 	%p
+7: 		= f.label :email
+8: 		%br= f.password_field :email
+9: 	%p
+10: 		= f.label :password
+11: 		%br= f.password_field :password
+
+    app/views/user_sessions/new.html.haml:8
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:31:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `email' for #<UserSession: no credentials provided>) on line #8 of app/views/user_sessions/new.html.haml:
+5: 		%br= f.text_field :username
+6: 	%p
+7: 		= f.label :email
+8: 		%br= f.password_field :email
+9: 	%p
+10: 		= f.label :password
+11: 		%br= f.password_field :password
+
+    app/views/user_sessions/new.html.haml:8
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (122.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:33:05) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+
+ActionView::TemplateError (undefined method `email' for #<UserSession: no credentials provided>) on line #8 of app/views/user_sessions/new.html.haml:
+5: 		%br= f.text_field :username
+6: 	%p
+7: 		= f.label :email
+8: 		%br= f.password_field :email
+9: 	%p
+10: 		= f.label :password
+11: 		%br= f.password_field :password
+
+    app/views/user_sessions/new.html.haml:8
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/user_sessions/new.html.haml:2:in `_run_haml_app47views47user_sessions47new46html46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:33:47) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 37ms (View: 16, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:33:52) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"fernferret", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'fernferret') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 271ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:33:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;35;1mBoard Load (2.0ms)[0m   [0mSELECT * FROM "boards" [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mBoard Load (2.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" = 1) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (4.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 267ms (View: 202, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-04-02 05:33:56) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 30ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:33:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (3.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 119ms (View: 76, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-02 05:33:59) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 30ms (View: 8, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-02 05:34:02) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"fernferret", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"TSzFHI0rE3eFr9VdtTKqepPij8g4YYxpPn693t3OMbE=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'fernferret') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 103ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:34:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;35;1mBoard Load (3.0ms)[0m   [0mSELECT * FROM "boards" [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+  [4;35;1mBoard Load (2.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" = 1) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Completed in 139ms (View: 96, DB: 9) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-04-02 05:34:07) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '1') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 28ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-02 05:34:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (0.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 190ms (View: 150, DB: 6) | 200 OK [http://localhost/]
+
+
+Processing BoardsController#index (for 137.112.115.0 at 2010-04-02 05:34:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (3.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" IS NULL) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 13119ms (View: 74, DB: 5) | 200 OK [http://137.112.104.176/]
+
+
+Processing UsersController#new (for 137.112.115.0 at 2010-04-02 05:35:32) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (9.0ms)
+Completed in 38ms (View: 21, DB: 0) | 200 OK [http://137.112.104.176/users/new]
+
+
+Processing UsersController#new (for 137.112.115.0 at 2010-04-02 05:35:52) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (8.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://137.112.104.176/users/new]
+
+
+Processing UsersController#create (for 137.112.115.0 at 2010-04-02 05:36:09) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"4oK908ayEER/86bNUBllJm/J74nFH2G6NgPBSmBOWgs=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"hammerdr", "password"=>"[FILTERED]", "email"=>"hammerdr@rose-hulman.edu"}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'hammerdr@rose-hulman.edu') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'hammerdr') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+  [4;35;1mUser Create (1.0ms)[0m   [0mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2010-04-02 09:36:09', 'efe3b62c9177e1cfb2e53f7f437bdce14606848077425f3209923db0ccf5762a1bc155906b21bde2a4e1c37b0cfb0c4d3c7b5f1b6560114352e7a660dac95baf', '2010-04-02 09:36:09', 'hammerdr', 'mUunlYJVH1eB2FrrRdZb', '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc', 'hammerdr@rose-hulman.edu')[0m
+Redirected to http://137.112.104.176:3000/
+Completed in 192ms (DB: 1) | 302 Found [http://137.112.104.176/users]
+
+
+Processing BoardsController#index (for 137.112.115.0 at 2010-04-02 05:36:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;36;1mBoard Load (2.0ms)[0m   [0;1mSELECT * FROM "boards" [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+  [4;36;1mBoard Load (1.0ms)[0m   [0;1mSELECT * FROM "boards" WHERE ("boards"."user_id" = 9) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 6) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 1) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 2) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+Completed in 107ms (View: 69, DB: 7) | 200 OK [http://137.112.104.176/]
+
+
+Processing BoardsController#new (for 137.112.115.0 at 2010-04-02 05:36:17) [GET]
+  Parameters: {"action"=>"new", "controller"=>"boards"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" [0m
+Rendering template within layouts/boards
+Rendering boards/new
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+Completed in 71ms (View: 21, DB: 1) | 200 OK [http://137.112.104.176/boards/new]
+
+
+Processing BoardsController#create (for 137.112.115.0 at 2010-04-02 05:36:21) [POST]
+  Parameters: {"commit"=>"Generate My Board!", "action"=>"create", "authenticity_token"=>"4oK908ayEER/86bNUBllJm/J74nFH2G6NgPBSmBOWgs=", "controller"=>"boards", "board"=>{"professor_id"=>"8"}}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 8) [0m
+  [4;36;1mPhrase Load IDs (find_random plugin) (0.0ms)[0m   [0;1mSELECT id FROM "phrases" WHERE ("phrases"."professor_id" = 8) [0m
+  [4;35;1mBoard Create (1.0ms)[0m   [0mINSERT INTO "boards" ("created_at", "professor_id", "updated_at", "generated", "user_id") VALUES('2010-04-02 09:36:21', 8, '2010-04-02 09:36:21', '2010-04-02 05:36:21', 1)[0m
+Redirected to http://137.112.104.176:3000/boards/26
+Completed in 355ms (DB: 2) | 302 Found [http://137.112.104.176/boards]
+
+
+Processing BoardsController#show (for 137.112.115.0 at 2010-04-02 05:36:21) [GET]
+  Parameters: {"action"=>"show", "id"=>"26", "controller"=>"boards"}
+  [4;36;1mBoard Load (1.0ms)[0m   [0;1mSELECT * FROM "boards" WHERE ("boards"."id" = 26) [0m
+Rendering template within layouts/boards
+Rendering boards/show
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 8) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" INNER JOIN "boards_phrases" ON "phrases".id = "boards_phrases".phrase_id WHERE ("boards_phrases".board_id = 26 ) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+Completed in 77ms (View: 63, DB: 2) | 200 OK [http://137.112.104.176/boards/26]
+
+
+Processing PhrasesController#new (for 137.112.115.0 at 2010-04-02 05:36:24) [GET]
+  Parameters: {"action"=>"new", "controller"=>"phrases"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" [0m
+Rendering template within layouts/phrases
+Rendering phrases/new
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '3f988b2bb9b5d49a263af4de4e79d7a314e2260ad7d76cbb5f1075b3e703fb18f972f153724bccf0ada7ff7e44270e4dbd53edbcbbe46d3791ee0de01e77c7fc') LIMIT 1[0m
+Completed in 77ms (View: 56, DB: 2) | 200 OK [http://137.112.104.176/phrases/new]

@@ -40,7 +40,6 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   config.gem 'haml', :version => '>= 2.2.22'
   config.gem 'authlogic'
-  config.gem 'ruby-net-ldap', :lib => 'net/ldap', :version => '>= 0.0.4'
 end
 
 Haml::Template.options[:format] = :html5
