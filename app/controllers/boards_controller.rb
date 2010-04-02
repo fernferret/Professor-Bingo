@@ -1,4 +1,5 @@
 class BoardsController < ApplicationController
+  before_filter :auth, :except => [:index, :show]
   # GET /boards
   # GET /boards.xml
   def index
@@ -44,7 +45,7 @@ class BoardsController < ApplicationController
     @board = Board.new(params[:board])
 	@board.generated = DateTime.now
 	current_user = UserSession.find
-	@board.user_id = current_user && current_user.record.id
+	@board.user_id = current_user and current_user.record.id
 	phrases = Array.new
 	@items = Phrase.random(25, :conditions => {:professor_id => @board.professor})
 	@items.sort_by{rand}.each do |phrase|
@@ -90,5 +91,13 @@ class BoardsController < ApplicationController
       format.html { redirect_to(boards_url) }
       format.xml  { head :ok }
     end
+  end
+  
+  private
+  
+  def auth
+    if not UserSession.find
+	  redirect_to :controller => 'user_sessions', :action => 'new'
+	end
   end
 end
