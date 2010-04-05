@@ -4,6 +4,8 @@
 	%p
 		= f.label :name
 		%br= f.text_field :name
+		%br= f.label :school_id
+		%br= f.text_field :school_id
 	%p= submit_tag('Create')
 
 = link_to('Back', professors_path)

@@ -1,0 +1,11 @@
+.header1
+	Listing Schools
+.bottomlinks.rounded
+	%table
+		- @schools.each do |school|
+			%tr
+				%td= h(school.name)
+				%td= link_to('View Professors', school)
+				%td= link_to('Edit', edit_school_path(school))
+				%td= link_to('Destroy',school,:confirm => 'Are you sure?', :method => :delete)
+	%br= link_to('New School', new_school_path)

@@ -1,0 +1,15 @@
+.header1
+	= @school.name
+
+.school
+	%table
+		- @school.professor.each do |prof|
+			%tr
+				%td= h(prof.name)
+				- if(Phrase.find(:all, :conditions => {:professor_id => prof.id}).length > 0)
+					%td= link_to('View Board', :controller => 'professors', :action => 'board', :id => prof)
+				- else
+					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new')
+				%td= link_to('Destroy', prof, :confirm => 'Are you sure?', :method => :delete)
+				%td= link_to('Show', professor_path)
+%br= link_to('Add Professor', new_professor_path)
