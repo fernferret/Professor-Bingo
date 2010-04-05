@@ -36584,3 +36584,27 @@ Processing SchoolsController#index (for 127.0.0.1 at 2010-04-04 20:45:19) [GET]
 Rendering template within layouts/schools
 Rendering schools/index
 Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-04 21:12:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.6ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 14ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-04 23:32:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.6ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 17ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-05 01:09:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.6ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/]
