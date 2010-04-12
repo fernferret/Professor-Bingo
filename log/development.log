@@ -36665,3 +36665,11 @@ Completed in 17ms (View: 9, DB: 1) | 200 OK [http://localhost/]
   [4;35;1mSQL (92.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100401144048')[0m
   [4;36;1mSQL (94.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20100401153056')[0m
   [4;35;1mSQL (125.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100404220133')[0m
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-12 15:28:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (13.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 6018ms (View: 5876, DB: 13) | 200 OK [http://localhost/]
