@@ -49,7 +49,7 @@ class ProfessorsController < ApplicationController
   def create
     @professor = Professor.new(params[:professor])
 	current_user = UserSession.find
-	@professor.user_id = current_user and current_user.record.id
+	@professor.user = current_user.record
     respond_to do |format|
       if @professor.save
         flash[:notice] = 'Professor was successfully created.'

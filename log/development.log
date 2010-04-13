@@ -37068,3 +37068,344 @@ Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-13 12:42:23) [GE
 Rendering template within layouts/application
 Rendering user_sessions/new
 Completed in 40ms (View: 7, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 13:36:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 117ms (View: 67, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:36:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+Completed in 174ms (View: 156, DB: 0) | 200 OK [http://localhost/schools/1]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 13:36:57) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as [:auth] rendered_or_redirected.
+Completed in 24ms (DB: 0) | 302 Found [http://localhost/professors/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-13 13:36:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 44ms (View: 21, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:37:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `professor' for #<ActionView::Base:0x7566978>) on line #12 of app/views/schools/show.html.haml:
+9: 					%td= link_to('View Board', :controller => 'professors', :action => 'board', :id => prof)
+10: 				- else
+11: 					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new')
+12: 				%td= h(professor.user_id)
+13: 				%td= link_to('Destroy', prof, :confirm => 'Are you sure?', :method => :delete)
+14: 				%td= link_to('Show', professor_path)
+15: %br= link_to('Add Professor', new_professor_path)
+
+    app/views/schools/show.html.haml:12:in `_run_haml_app47views47schools47show46html46haml'
+    app/views/schools/show.html.haml:5:in `_run_haml_app47views47schools47show46html46haml'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/schools_controller.rb:18:in `show'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:37:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+Completed in 151ms (View: 137, DB: 3) | 200 OK [http://localhost/schools/1]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:42:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #12 of app/views/schools/show.html.haml:
+9: 					%td= link_to('View Board', :controller => 'professors', :action => 'board', :id => prof)
+10: 				- else
+11: 					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new')
+12: 				%td= h(prof.user.id)
+13: 				%td= link_to('Destroy', prof, :confirm => 'Are you sure?', :method => :delete)
+14: 				%td= link_to('Show', professor_path)
+15: %br= link_to('Add Professor', new_professor_path)
+
+    app/views/schools/show.html.haml:12:in `_run_haml_app47views47schools47show46html46haml'
+    app/views/schools/show.html.haml:5:in `_run_haml_app47views47schools47show46html46haml'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/schools_controller.rb:18:in `show'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:43:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Completed in 200ms (View: 186, DB: 3) | 200 OK [http://localhost/schools/1]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 13:45:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as [:auth] rendered_or_redirected.
+Completed in 23ms (DB: 0) | 302 Found [http://localhost/professors/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-13 13:45:44) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 29ms (View: 7, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-13 13:45:49) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"fernferret", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE (LOWER("users".username) = 'fernferret') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 368ms (DB: 1) | 302 Found [http://localhost/user_sessions]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 13:45:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 49ms (View: 36, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:45:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 164ms (View: 148, DB: 4) | 200 OK [http://localhost/schools/1]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 13:45:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/professors
+Rendering professors/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 146ms (View: 100, DB: 2) | 200 OK [http://localhost/professors/new]
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-04-13 13:46:01) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "professor"=>{"name"=>"test", "school_id"=>"1"}, "controller"=>"professors"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+
+ActiveRecord::AssociationTypeMismatch (User(#61673436) expected, got UserSession(#61712520)):
+  app/controllers/professors_controller.rb:52:in `create'
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (44.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-04-13 13:46:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 83ms (View: 65, DB: 3) | 200 OK [http://localhost/professors]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 13:46:29) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/professors
+Rendering professors/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 65ms (View: 15, DB: 1) | 200 OK [http://localhost/professors/new]
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-04-13 13:46:32) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "professor"=>{"name"=>"test", "school_id"=>"1"}, "controller"=>"professors"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+
+ActiveRecord::AssociationTypeMismatch (User(#61422948) expected, got Fixnum(#26059572)):
+  app/controllers/professors_controller.rb:52:in `create'
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (151.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-04-13 13:46:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 75ms (View: 60, DB: 2) | 200 OK [http://localhost/professors]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 13:46:55) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/professors
+Rendering professors/new
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 64ms (View: 14, DB: 1) | 200 OK [http://localhost/professors/new]
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-04-13 13:47:00) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "professor"=>{"name"=>"test2", "school_id"=>"1"}, "controller"=>"professors"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+  [4;36;1mProfessor Create (2.0ms)[0m   [0;1mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at", "user_id", "school_id") VALUES('test2', '2010-04-13 17:47:01', NULL, '2010-04-13 17:47:01', 2, 1)[0m
+Redirected to http://localhost:3000/professors/5
+Completed in 243ms (DB: 3) | 302 Found [http://localhost/professors]
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-04-13 13:47:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"professors"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 5) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 57ms (View: 43, DB: 1) | 200 OK [http://localhost/professors/5]
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-04-13 13:49:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"5", "controller"=>"professors"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors"."id" = 5) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 47ms (View: 33, DB: 2) | 200 OK [http://localhost/professors/5]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 13:49:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 123ms (View: 112, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 13:49:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 5) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 91ms (View: 73, DB: 5) | 200 OK [http://localhost/schools/1]
