@@ -36926,3 +36926,145 @@ Migrating to AddUserToProfOnAdd (20100413162843)
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("professors")[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schools")[0m
   [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 12:40:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+
+NoMethodError (undefined method `auth' for #<ProfessorsController:0x7436fd0>):
+  haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (41.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 12:41:02) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as [:auth] rendered_or_redirected.
+Completed in 114ms (DB: 0) | 302 Found [http://localhost/professors/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-13 12:41:03) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 82ms (View: 61, DB: 0) | 200 OK [http://localhost/user_sessions/new]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-13 12:41:07) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"fernferret", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'fernferret') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 297ms (View: 6, DB: 0) | 200 OK [http://localhost/user_sessions]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-04-13 12:41:16) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (10.0ms)
+Completed in 42ms (View: 24, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-04-13 12:41:28) [POST]
+  Parameters: {"commit"=>"Submit", "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "username"=>"fernferret", "password"=>"[FILTERED]", "email"=>"fernferret@gmail.com"}}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'fernferret@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."username") = 'fernferret') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE ("users"."persistence_token" = '15088c8f5e8434bd8bf4c075853c677c55bbfbec3a0f90bbc266317259bd04a6bd78b85caaea558c4bf8004d14497872414f5481100aef1bd25f404132dc0977') LIMIT 1[0m
+  [4;36;1mUser Create (1.0ms)[0m   [0;1mINSERT INTO "users" ("created_at", "crypted_password", "updated_at", "username", "password_salt", "persistence_token", "email") VALUES('2010-04-13 16:41:36', 'd05faa508626f352e618f153d12919ba37162b74b6e122ceea6069a658a78a8898ac9ade23afec68e757fbbe61a3d50bffff9a3e53a024a40fe62906856b8621', '2010-04-13 16:41:36', 'fernferret', 'AFSRI_oBIn-Lwh6Lt0eK', '15088c8f5e8434bd8bf4c075853c677c55bbfbec3a0f90bbc266317259bd04a6bd78b85caaea558c4bf8004d14497872414f5481100aef1bd25f404132dc0977', 'fernferret@gmail.com')[0m
+Redirected to http://localhost:3000/
+Completed in 8267ms (DB: 2) | 302 Found [http://localhost/users]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 12:41:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 114ms (View: 99, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 12:41:44) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+Completed in 62ms (View: 48, DB: 3) | 200 OK [http://localhost/schools/1]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 12:41:45) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '15088c8f5e8434bd8bf4c075853c677c55bbfbec3a0f90bbc266317259bd04a6bd78b85caaea558c4bf8004d14497872414f5481100aef1bd25f404132dc0977') LIMIT 1[0m
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 70ms (View: 25, DB: 0) | 200 OK [http://localhost/professors/new]
+
+
+Processing BoardsController#index (for 127.0.0.1 at 2010-04-13 12:42:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"boards"}
+  [4;35;1mBoard Load (0.0ms)[0m   [0mSELECT * FROM "boards" [0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '15088c8f5e8434bd8bf4c075853c677c55bbfbec3a0f90bbc266317259bd04a6bd78b85caaea558c4bf8004d14497872414f5481100aef1bd25f404132dc0977') LIMIT 1[0m
+  [4;35;1mBoard Load (1.0ms)[0m   [0mSELECT * FROM "boards" WHERE ("boards"."user_id" = 2) [0m
+Rendering template within layouts/boards
+Rendering boards/index
+  [4;36;1mCACHE (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."persistence_token" = '15088c8f5e8434bd8bf4c075853c677c55bbfbec3a0f90bbc266317259bd04a6bd78b85caaea558c4bf8004d14497872414f5481100aef1bd25f404132dc0977') LIMIT 1[0m
+Completed in 176ms (View: 137, DB: 2) | 200 OK [http://localhost/boards]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-04-13 12:42:10) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."persistence_token" = '15088c8f5e8434bd8bf4c075853c677c55bbfbec3a0f90bbc266317259bd04a6bd78b85caaea558c4bf8004d14497872414f5481100aef1bd25f404132dc0977') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 31ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 12:42:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 17ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 12:42:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+Completed in 59ms (View: 33, DB: 2) | 200 OK [http://localhost/schools/1]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 12:42:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+Redirected to http://localhost:3000/user_sessions/new
+Filter chain halted as [:auth] rendered_or_redirected.
+Completed in 30ms (DB: 0) | 302 Found [http://localhost/professors/new]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-13 12:42:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 40ms (View: 7, DB: 0) | 200 OK [http://localhost/user_sessions/new]

@@ -90,4 +90,9 @@ class ProfessorsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  def auth
+    if not UserSession.find
+	  redirect_to :controller => 'user_sessions', :action => 'new'
+	end
+  end
 end
