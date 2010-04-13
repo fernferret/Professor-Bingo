@@ -7,10 +7,13 @@
 		%br= f.text_field :name
 	%p	
 		= 'School'
-		%select{:name => 'professor[school_id]', :id => 'professor_school_id'}
-			- @schools.each do |school|
-				%option{:value => school.id}
-					= school.name
+		- if !@school.nil?
+			%br= h(@school.name)
+		- else
+			%select{:name => 'professor[school_id]', :id => 'professor_school_id'}
+				- @schools.each do |school|
+					%option{:value => school.id}
+						= school.name
 					
 	%p= submit_tag('Create')
 

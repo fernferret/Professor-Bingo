@@ -12,4 +12,4 @@
 				%td= h(prof.user.username)
 				%td= link_to('Destroy', prof, :confirm => 'Are you sure?', :method => :delete)
 				%td= link_to('Show', professor_path)
-%br= link_to('Add Professor', new_professor_path)
+%br= link_to('Add Professor', :controller => 'professors', :action => 'new', :school => @school)

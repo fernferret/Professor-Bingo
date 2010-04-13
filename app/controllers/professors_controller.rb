@@ -32,7 +32,11 @@ class ProfessorsController < ApplicationController
   # GET /professors/new.xml
   def new
     @professor = Professor.new
-	@schools = School.find(:all)
+	if !params[:school].nil?
+		@school = School.find(params[:school])
+	else
+		@schools = School.find(:all)
+	end
     respond_to do |format|
       format.html # new.html.haml
       format.xml  { render :xml => @professor }
