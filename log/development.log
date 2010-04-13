@@ -37409,3 +37409,125 @@ Rendering schools/show
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
   [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
 Completed in 91ms (View: 73, DB: 5) | 200 OK [http://localhost/schools/1]
+  [4;36;1mBoard Delete all (4.0ms)[0m   [0;1mDELETE FROM "boards" WHERE 1=1[0m
+  [4;35;1mPhrase Delete all (84.0ms)[0m   [0mDELETE FROM "phrases" WHERE 1=1[0m
+  [4;36;1mProfessor Delete all (79.0ms)[0m   [0;1mDELETE FROM "professors" WHERE 1=1[0m
+  [4;35;1mSchool Delete all (109.0ms)[0m   [0mDELETE FROM "schools" WHERE 1=1[0m
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:20:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 118ms (View: 66, DB: 1) | 200 OK [http://localhost/schools]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:20:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 46ms (View: 33, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-04-13 14:20:18) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 29ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:20:19) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 36ms (View: 26, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-04-13 14:20:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 92ms (View: 69, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-04-13 14:20:26) [POST]
+  Parameters: {"commit"=>"Login", "user_session"=>{"username"=>"fernferret", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE (LOWER("users".username) = 'fernferret') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 272ms (DB: 0) | 302 Found [http://localhost/user_sessions]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:20:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 99ms (View: 89, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#new (for 127.0.0.1 at 2010-04-13 14:21:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"schools"}
+Rendering template within layouts/schools
+Rendering schools/new
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 211ms (View: 164, DB: 0) | 200 OK [http://localhost/schools/new]
+
+
+Processing SchoolsController#create (for 127.0.0.1 at 2010-04-13 14:21:37) [POST]
+  Parameters: {"school"=>{"name"=>"Test"}, "commit"=>"Create", "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "controller"=>"schools"}
+  [4;35;1mSchool Create (1.0ms)[0m   [0mINSERT INTO "schools" ("name", "created_at", "updated_at") VALUES('Test', '2010-04-13 18:21:37', '2010-04-13 18:21:37')[0m
+Redirected to http://localhost:3000/schools/2
+Completed in 116ms (DB: 1) | 302 Found [http://localhost/schools]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 14:21:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 2) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 2) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 70ms (View: 56, DB: 0) | 200 OK [http://localhost/schools/2]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:21:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 60ms (View: 46, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mBoard Delete all (1.0ms)[0m   [0;1mDELETE FROM "boards" WHERE 1=1[0m
+  [4;35;1mPhrase Delete all (1.0ms)[0m   [0mDELETE FROM "phrases" WHERE 1=1[0m
+  [4;36;1mProfessor Delete all (1.0ms)[0m   [0;1mDELETE FROM "professors" WHERE 1=1[0m
+  [4;35;1mSchool Delete all (126.0ms)[0m   [0mDELETE FROM "schools" WHERE 1=1[0m
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:22:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (1.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Completed in 113ms (View: 66, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-04-13 14:22:12) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = '2') LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed in 30ms (DB: 1) | 302 Found [http://localhost/logout]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 14:22:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 42ms (View: 28, DB: 1) | 200 OK [http://localhost/]
