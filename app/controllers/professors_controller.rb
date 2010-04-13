@@ -31,6 +31,7 @@ class ProfessorsController < ApplicationController
   # GET /professors/new.xml
   def new
     @professor = Professor.new
+	@schools = School.find(:all)
     respond_to do |format|
       format.html # new.html.haml
       format.xml  { render :xml => @professor }

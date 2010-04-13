@@ -1,11 +1,17 @@
-%h1= "New Professor"
+.header1= 'New Professor'
+
 - form_for(@professor) do |f|
 	= f.error_messages
 	%p
 		= f.label :name
 		%br= f.text_field :name
-		%br= f.label :school_id
-		%br= f.text_field :school_id
+	%p	
+		= 'School'
+		%select{:name => 'professor[school_id]', :id => 'professor_school_id'}
+			- @schools.each do |school|
+				%option{:value => school.id}
+					= school.name
+					
 	%p= submit_tag('Create')
 
 = link_to('Back', professors_path)

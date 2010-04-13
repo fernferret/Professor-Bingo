@@ -1,3 +1,4 @@
 class School < ActiveRecord::Base
-	has_many :professor
+	has_many :professors
+	has_many :users
 end

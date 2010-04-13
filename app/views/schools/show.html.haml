@@ -3,7 +3,7 @@
 
 .school
 	%table
-		- @school.professor.each do |prof|
+		- @school.professors.each do |prof|
 			%tr
 				%td= h(prof.name)
 				- if(Phrase.find(:all, :conditions => {:professor_id => prof.id}).length > 0)

@@ -36673,3 +36673,222 @@ Processing SchoolsController#index (for 127.0.0.1 at 2010-04-12 15:28:51) [GET]
 Rendering template within layouts/schools
 Rendering schools/index
 Completed in 6018ms (View: 5876, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 11:28:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;36;1mSchool Load (14.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 182ms (View: 53, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 11:28:52) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+
+ActionView::TemplateError (undefined method `professor' for #<School:0x732e3e8>) on line #6 of app/views/schools/show.html.haml:
+3: 
+4: .school
+5: 	%table
+6: 		- @school.professor.each do |prof|
+7: 			%tr
+8: 				%td= h(prof.name)
+9: 				- if(Phrase.find(:all, :conditions => {:professor_id => prof.id}).length > 0)
+
+    app/views/schools/show.html.haml:6:in `_run_haml_app47views47schools47show46html46haml'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/schools_controller.rb:18:in `show'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (54.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 11:29:43) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+
+ActionView::TemplateError (undefined method `professor' for #<School:0x7421868>) on line #6 of app/views/schools/show.html.haml:
+3: 
+4: .school
+5: 	%table
+6: 		- @school.professor.each do |prof|
+7: 			%tr
+8: 				%td= h(prof.name)
+9: 				- if(Phrase.find(:all, :conditions => {:professor_id => professor.id}).length > 0)
+
+    app/views/schools/show.html.haml:6:in `_run_haml_app47views47schools47show46html46haml'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/schools_controller.rb:18:in `show'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (120.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 11:31:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (0.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;36;1mProfessor Load (1.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `professor' for #<ActionView::Base:0x76113f0>) on line #9 of app/views/schools/show.html.haml:
+6: 		- @school.professor.each do |prof|
+7: 			%tr
+8: 				%td= h(prof.name)
+9: 				- if(Phrase.find(:all, :conditions => {:professor_id => professor.id}).length > 0)
+10: 					%td= link_to('View Board', :controller => 'professors', :action => 'board', :id => prof)
+11: 				- else
+12: 					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new')
+
+    app/views/schools/show.html.haml:9:in `_run_haml_app47views47schools47show46html46haml'
+    app/views/schools/show.html.haml:6:in `_run_haml_app47views47schools47show46html46haml'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/schools_controller.rb:18:in `show'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 11:32:17) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+
+ActionView::TemplateError (undefined method `Professor' for #<School:0x731fce8>) on line #6 of app/views/schools/show.html.haml:
+3: 
+4: .school
+5: 	%table
+6: 		- @school.Professor.each do |prof|
+7: 			%tr
+8: 				%td= h(prof.name)
+9: 				- if(Phrase.find(:all, :conditions => {:professor_id => prof.id}).length > 0)
+
+    app/views/schools/show.html.haml:6:in `_run_haml_app47views47schools47show46html46haml'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.23) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/schools_controller.rb:18:in `show'
+    haml (2.2.23) rails/./lib/sass/plugin/rails.rb:20:in `process'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/Ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/Ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 11:37:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (0.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+Completed in 50ms (View: 39, DB: 0) | 200 OK [http://localhost/schools/1]
+
+
+Processing ProfessorsController#new (for 127.0.0.1 at 2010-04-13 11:37:34) [GET]
+  Parameters: {"action"=>"new", "controller"=>"professors"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" [0m
+Rendering template within layouts/professors
+Rendering professors/new
+Completed in 46ms (View: 28, DB: 0) | 200 OK [http://localhost/professors/new]
+
+
+Processing ProfessorsController#create (for 127.0.0.1 at 2010-04-13 11:37:45) [POST]
+  Parameters: {"commit"=>"Create", "action"=>"create", "authenticity_token"=>"NAUlI0ewPWFioy85ADG01y4nHMX0ZnYCeVmKlqCeats=", "professor"=>{"name"=>"David Pick", "school_id"=>"1"}, "controller"=>"professors"}
+  [4;35;1mProfessor Create (1.0ms)[0m   [0mINSERT INTO "professors" ("name", "created_at", "prof_id", "updated_at", "school_id") VALUES('David Pick', '2010-04-13 15:37:45', NULL, '2010-04-13 15:37:45', 1)[0m
+Redirected to http://localhost:3000/professors/4
+Completed in 311ms (DB: 1) | 302 Found [http://localhost/professors]
+
+
+Processing ProfessorsController#show (for 127.0.0.1 at 2010-04-13 11:37:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"professors"}
+  [4;36;1mProfessor Load (0.0ms)[0m   [0;1mSELECT * FROM "professors" WHERE ("professors"."id" = 4) [0m
+Rendering template within layouts/professors
+Rendering professors/show
+Completed in 23ms (View: 11, DB: 0) | 200 OK [http://localhost/professors/4]
+
+
+Processing ProfessorsController#index (for 127.0.0.1 at 2010-04-13 11:37:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"professors"}
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" [0m
+Rendering template within layouts/professors
+Rendering professors/index
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;35;1mPhrase Load (0.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+Completed in 99ms (View: 87, DB: 2) | 200 OK [http://localhost/professors]
+
+
+Processing SchoolsController#index (for 127.0.0.1 at 2010-04-13 11:37:57) [GET]
+  Parameters: {"action"=>"index", "controller"=>"schools"}
+  [4;35;1mSchool Load (1.0ms)[0m   [0mSELECT * FROM "schools" [0m
+Rendering template within layouts/schools
+Rendering schools/index
+Completed in 17ms (View: 7, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing SchoolsController#show (for 127.0.0.1 at 2010-04-13 11:37:59) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"schools"}
+  [4;36;1mSchool Load (0.0ms)[0m   [0;1mSELECT * FROM "schools" WHERE ("schools"."id" = 1) [0m
+Rendering template within layouts/schools
+Rendering schools/show
+  [4;35;1mProfessor Load (1.0ms)[0m   [0mSELECT * FROM "professors" WHERE ("professors".school_id = 1) [0m
+  [4;36;1mPhrase Load (1.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 1) [0m
+  [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
+  [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
+Completed in 45ms (View: 31, DB: 3) | 200 OK [http://localhost/schools/1]
