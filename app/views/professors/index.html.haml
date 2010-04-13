@@ -10,5 +10,5 @@
 				- else
 					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new', :id => professor)
 				%td= link_to('Edit', edit_professor_path(professor))
-				%td= link_to('fuck stokes',professor,:confirm => 'Are you sure?', :method => :delete)
+				%td= link_to('Show',professor,:confirm => 'Are you sure?', :method => :delete)
 	%br= link_to('New professor', new_professor_path)
