@@ -1,6 +1,7 @@
 class ProfessorsController < ApplicationController
-  # GET /professors
-  # GET /professors.xml
+	before_filter :auth, :except => [:index, :show]
+	# GET /professors
+	# GET /professors.xml
   def index
     @professors = Professor.all
 
@@ -47,7 +48,8 @@ class ProfessorsController < ApplicationController
   # POST /professors.xml
   def create
     @professor = Professor.new(params[:professor])
-	
+	current_user = UserSession.find
+	@professor.user_id = current_user and current_user.record.id
     respond_to do |format|
       if @professor.save
         flash[:notice] = 'Professor was successfully created.'

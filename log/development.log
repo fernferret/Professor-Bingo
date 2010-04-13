@@ -36892,3 +36892,37 @@ Rendering schools/show
   [4;35;1mPhrase Load (1.0ms)[0m   [0mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 3) [0m
   [4;36;1mPhrase Load (0.0ms)[0m   [0;1mSELECT * FROM "phrases" WHERE ("phrases"."professor_id" = 4) [0m
 Completed in 45ms (View: 31, DB: 3) | 200 OK [http://localhost/schools/1]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePhrases (20100330035004)
+Migrating to CreateProfessors (20100330040005)
+Migrating to AddProfToPhrase (20100330061029)
+Migrating to CreateUsers (20100331045850)
+Migrating to RemoveProfId (20100331081401)
+Migrating to CreateBoards (20100401080603)
+Migrating to AddPhrasesToBoards (20100401144048)
+Migrating to RemoveIdFromHabtm (20100401153056)
+Migrating to CreateSchools (20100404220133)
+Migrating to AddSchoolId (20100404234837)
+Migrating to AddUserToProfOnAdd (20100413162843)
+  [4;36;1mSQL (16.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mALTER TABLE "professors" ADD "user_id" integer[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100413162843')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("boards")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("boards_phrases")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("phrases")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("professors")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("schools")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("users")[0m

@@ -3,4 +3,5 @@ class User < ActiveRecord::Base
 	acts_as_authentic
 	has_many :boards
 	has_one :school
+	has_many :professors
 end
