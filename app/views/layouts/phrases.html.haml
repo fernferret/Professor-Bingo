@@ -8,9 +8,10 @@
 		%script{:type => 'text/javascript', :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'}
 		- if protect_against_forgery?
 			%script{:type => 'text/javascript'}
-				:cdata
-					window._auth_token_name = "#{request_forgery_protection_token}";
-					window._auth_token = "#{form_authenticity_token}";
+				= '//<![CDATA['
+				window._auth_token_name = "#{request_forgery_protection_token}";
+				window._auth_token = "#{form_authenticity_token}";
+				= '//]]>'
 		= javascript_include_tag('application')
 	%body
 		%p{:style => 'color: green'}
