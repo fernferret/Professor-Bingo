@@ -11,5 +11,5 @@
 					%td= link_to('Add Phrases', :controller => 'phrases', :action => 'new', :id => professor)
 				%td= h(professor.user_id)
 				%td= link_to('Edit', edit_professor_path(professor))
-				%td= link_to('Show',professor,:confirm => 'Are you sure?', :method => :delete)
+				%td= link_to('Delete',professor,:confirm => 'Are you sure?', :method => :delete)
 	%br= link_to('New professor', new_professor_path)

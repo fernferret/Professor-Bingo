@@ -39,7 +39,6 @@ class ProfessorsController < ApplicationController
 	end
     respond_to do |format|
       format.html # new.html.haml
-      format.xml  { render :xml => @professor }
     end
   end
 
