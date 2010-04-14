@@ -1,2 +1,4 @@
 haml --version 2.2.23
 authlogic --version 2.1.3
+populator --version 0.2.5
+faker --version 0.3.1
