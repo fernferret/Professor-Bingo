@@ -1,6 +1,8 @@
 namespace :db do
 	desc "Add Some Professors to the db"
 	task :populate => :environment do
+		require 'populator'
+		require 'faker'
 		School.populate 5 do |school|
 			school.name = Populator.words(1..3).titleize
 			Professor.populate 2..20 do |prof|
